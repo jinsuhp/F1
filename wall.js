@@ -6,6 +6,7 @@ class Wall{
 
         this.obj = document.createElement("a-box");
         this.obj.setAttribute("position",{x:x,y:y,z:z});
+        this.obj.setAttribute("static-body", "");
         this.obj.setAttribute("color","white");
         this.obj.setAttribute("width", 8);
         this.obj.setAttribute("height", 3);

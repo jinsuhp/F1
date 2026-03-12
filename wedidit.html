@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+    <script src="script.js"></script>
+    <script src = "wall.js"></script>
+    <script src = "mapSelector.js"></script>
+    <script src = "ifwecandoit.html"></script>
+    <script src =  "wedidit.html"></script>
+    
+  </head>
+  <body>
+    <a-scene>
+
+      <a-assets>
+        <a-asset-item id = "track" src = "track.glb"></a-asset-item>
+        <img src = "sun.png" id = "sun"> 
+      </a-assets>
+      <a-gltf-model id = "trackModel" position = "50 1 250" scale = "600.07 6.07 6.07"></a-gltf-model>
+      
+      <a-sky src = "#sun" color = "sky blue"></a-sky>
+      <a-camera wasd-controls="acceleration: 500; fly: true" position="-30 250 0">
+      </a-camera>
+    </a-scene>
+  </body>
+</html>
